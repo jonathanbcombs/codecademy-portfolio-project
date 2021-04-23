@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+  font-family: Arial, "sans-serif";
+  color: #707070;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 900;
+  margin: .5rem 0;
+}
+
+h2 {
+  font-size: 3.125rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+body {
+  max-width: 375px;
+  max-height: 667px;
+  overflow: scroll;
+  background-color: #f8f8f8;
+  margin: auto;
+}
+
+nav, header, section, footer {
+  padding: 25px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  max-width: 375px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li.cta {
+  margin: auto;
+}
+
+header, main section, footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+header .content {
+  margin: auto;
+}
+
+header .content p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: .5rem 0;
+}
+#client-a {
+  background-color: #6F7070;
+  color: #ffffff;
+}
+#client-b{
+  background-color: #2F2F2F;
+  color: #ffffff;
+}
