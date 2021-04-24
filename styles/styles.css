@@ -53,7 +53,7 @@ nav ul li.cta {
   margin: auto;
 }
 
-header, main section, footer {
+header, main section, footer, .modal-content {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -62,14 +62,10 @@ header, main section, footer {
   box-sizing: border-box;
 }
 
-header .content {
-  margin: auto;
-}
-
 header .content p {
   font-size: 1.25rem;
   font-weight: 400;
-  margin: .5rem 0;
+  margin: .5rem 0 1.5rem;
 }
 #client-a {
   background-color: #6F7070;
@@ -78,4 +74,85 @@ header .content p {
 #client-b{
   background-color: #2F2F2F;
   color: #ffffff;
+}
+
+button {
+    display: inline-block;
+border: none;
+padding: .75rem .85rem;
+margin: 0;
+text-decoration: none;
+background: transparent;
+color: #707070;
+border: 1px solid #707070;
+text-transform: uppercase;
+font-family: sans-serif;
+font-size: .75rem;
+/* font-weight: 100; */
+cursor: pointer;
+text-align: center;
+-webkit-appearance: none;
+-moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #707070;
+  color: #ffffff;
+border: 1px solid #707070;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 375px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content p {
+  margin: auto;
+}
+
+.modal-content span {
+  text-align: right;
 }
